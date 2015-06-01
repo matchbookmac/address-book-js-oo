@@ -61,6 +61,26 @@ $(document).ready(function() {
     $("input.input-state").val("");
     $("input.input-zip").val("");
 
+    $("#new-addresses").empty();
+    $("#new-addresses").append('<div class="new-address">' +
+                                 '<div class="form-group">' +
+                                   '<label for="input-street">Street:</label>' +
+                                   '<input type="text" class="form-control input-street">' +
+                                 '</div>' +
+                                 '<div class="form-group">' +
+                                   '<label for="input-city">City:</label>' +
+                                   '<input type="text" class="form-control input-city">' +
+                                 '</div>' +
+                                 '<div class="form-group">' +
+                                   '<label for="input-state">State:</label>' +
+                                   '<input type="text" class="form-control input-state">' +
+                                 '</div>' +
+                                 '<div class="form-group">' +
+                                   '<label for="input-zip">Zip:</label>' +
+                                   '<input type="text" class="form-control input-zip">' +
+                                 '</div>' +
+                               '</div>');
+
   });
 
 });
