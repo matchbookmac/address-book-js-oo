@@ -13,21 +13,33 @@
         <p class="lead">Insert a first name, a last name, and an address to add as a contact.<br></p>
         <form id="new-contact">
           <div class="form-group">
-              <label for="input-firstname"><b>First Name:</b></label>
-              <input id="input-firstname" type="text">
-              <label for="input-lastname"><b>Last Name:</b></label>
-              <input id="input-lastname" type="text">
-              <label for="input-address"><b>Address:</b></label>
-              <input id="input-address" type="text">
+            <label for="input-firstname"><b>First Name:</b></label>
+            <input id="input-firstname" type="text">
+            <label for="input-lastname"><b>Last Name:</b></label>
+            <input id="input-lastname" type="text">
+          </div>
+          <div class="form-group">
+            <div id="new-addresses">
+              <div class="new-address">
+                <label for="input-street"><b>Street:</b></label>
+                <input class="form-control input-street" type="text">
+                <label for="input-city"><b>City:</b></label>
+                <input class="form-control input-city" type="text">
+                <label for="input-state"><b>State:</b></label>
+                <input class="form-control input-state" type="text">
+                <label for="input-zip"><b>Zip:</b></label>
+                <input class="form-control input-zip" type="text">
+              </div>
+            </div>
           </div>
           <div id="result">
             <div class="alert alert-info"><p><b>Result:</b> <em><span class="output"></span></em> </p></div>
           </div>
-          <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+          <span class="btn btn-lg btn-primary" id="add-address">Another address</span>
+          <button type="submit" class="btn btn-lg btn-success">Submit</button>
         </div>
       </form>
     </div>
-
 
     <div class="container">
 
@@ -35,7 +47,10 @@
         <h2></h2>
         <p>First name: <span class="first-name"></span></p>
         <p>Last name: <span class="last-name"></span></p>
-        <p>Address: <span class="address"></span></p>
+        <p>Addresses:</p>
+        <ul id="addresses">
+
+        </ul>
       </div>
 
       <h2>Contacts:</h2>
